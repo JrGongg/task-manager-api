@@ -2,8 +2,8 @@ FROM python:3.9
 
 WORKDIR /app
 
-COPY pyproject.toml poetry.lock /app/
-RUN pip install poetry && poetry install
+COPY requirements.txt /app/
+RUN pip install -r /app/requirements.txt
 
 COPY . /app
 
