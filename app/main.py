@@ -25,3 +25,6 @@ def read_root():
 @REQUEST_TIME.time()
 def get_database_url():
     return {"database_url": os.getenv("DATABASE_URL")}
+
+
+# Asegúrate de que haya una línea en blanco al final del archivo
